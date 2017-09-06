@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		696A681B1F5FE11800126F42 /* DDTableViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 696A68191F5FE11800126F42 /* DDTableViewAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		696A681C1F5FE11800126F42 /* DDTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 696A681A1F5FE11800126F42 /* DDTableViewAdapter.m */; };
+		697C49511F5FDD8400ABED71 /* DDTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 697C494F1F5FDD8400ABED71 /* DDTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		699748E81F5FD55400C8589B /* DDTableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 699748E61F5FD55400C8589B /* DDTableViewCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		699748E91F5FD55400C8589B /* DDTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 699748E71F5FD55400C8589B /* DDTableViewCellModel.m */; };
 		69E926DF1F5FA1F100DC5370 /* DataDominantTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E926DD1F5FA1F100DC5370 /* DataDominantTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		696A68191F5FE11800126F42 /* DDTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewAdapter.h; sourceTree = "<group>"; };
+		696A681A1F5FE11800126F42 /* DDTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewAdapter.m; sourceTree = "<group>"; };
+		697C494F1F5FDD8400ABED71 /* DDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewCell.h; sourceTree = "<group>"; };
 		699748E61F5FD55400C8589B /* DDTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewCellModel.h; sourceTree = "<group>"; };
-		699748E71F5FD55400C8589B /* DDTableViewCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewCellModel.m; sourceTree = "<group>"; };
 		69E926DA1F5FA1F100DC5370 /* DataDominantTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataDominantTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E926DD1F5FA1F100DC5370 /* DataDominantTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDominantTableView.h; sourceTree = "<group>"; };
 		69E926DE1F5FA1F100DC5370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -53,7 +57,9 @@
 				69E926DD1F5FA1F100DC5370 /* DataDominantTableView.h */,
 				69E926DE1F5FA1F100DC5370 /* Info.plist */,
 				699748E61F5FD55400C8589B /* DDTableViewCellModel.h */,
-				699748E71F5FD55400C8589B /* DDTableViewCellModel.m */,
+				697C494F1F5FDD8400ABED71 /* DDTableViewCell.h */,
+				696A68191F5FE11800126F42 /* DDTableViewAdapter.h */,
+				696A681A1F5FE11800126F42 /* DDTableViewAdapter.m */,
 			);
 			path = DataDominantTableView;
 			sourceTree = "<group>";
@@ -67,6 +73,8 @@
 			files = (
 				699748E81F5FD55400C8589B /* DDTableViewCellModel.h in Headers */,
 				69E926DF1F5FA1F100DC5370 /* DataDominantTableView.h in Headers */,
+				696A681B1F5FE11800126F42 /* DDTableViewAdapter.h in Headers */,
+				697C49511F5FDD8400ABED71 /* DDTableViewCell.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				699748E91F5FD55400C8589B /* DDTableViewCellModel.m in Sources */,
+				696A681C1F5FE11800126F42 /* DDTableViewAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

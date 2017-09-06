@@ -17,4 +17,6 @@ FOUNDATION_EXPORT const unsigned char DataDominantTableViewVersionString[];
 // In this header, you should import all the public headers of your framework using statements like #import <DataDominantTableView/PublicHeader.h>
 
 #import <DataDominantTableView/DDTableViewCellModel.h>
+#import <DataDominantTableView/DDTableViewCell.h>
+#import <DataDominantTableView/DDTableViewAdapter.h>
 
