@@ -340,6 +340,7 @@
 				697C49431F5FD9F100ABED71 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
