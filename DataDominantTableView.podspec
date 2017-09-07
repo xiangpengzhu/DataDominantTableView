@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "DataDominantTableView"
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
   s.summary      = "一个UITableView辅助工具"
 
   # This description is used to generate tags and improve search results.
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = "一个UITableView辅助工具。当页面中有多种Cell时，可以使用此工具实现根据不同的数据来显示不同的Cell，从而避免在“- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath”方法里面根据indexPath区分Cell，从而降低TableView的维护成本。" 
+  s.description  = "一个UITableView辅助工具。当页面中有多种Cell时，可以使用此工具实现根据不同的数据来显示不同的Cell，从而避免在“- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath”方法里面根据indexPath区分Cell，从而降低TableView的维护成本。"
 
   s.homepage     = "https://github.com/xiangpengzhu/DataDominantTableView"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
@@ -77,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/xiangpengzhu/DataDominantTableView.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/xiangpengzhu/DataDominantTableView.git", :tag => "1.0.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
