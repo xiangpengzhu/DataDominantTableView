@@ -39,6 +39,9 @@ class MenuViewController: UIViewController {
 			MenuCellModel(title: "子类化DDTableViewAdapter", cellDidSelectAction: {
 				[weak self] in self?.goToUseCustomTableViewAdapterDirectly()
 			}),
+			MenuCellModel(title: "Collection view", cellDidSelectAction: {
+				[weak self] in self?.goToCollectionViewController()
+			}),
 			]]
 		tableView.reloadData()
 	}
@@ -51,6 +54,11 @@ class MenuViewController: UIViewController {
 	private func goToUseCustomTableViewAdapterDirectly() {
 		let viewController = CustomTableViewAdapterViewController()
 		self.navigationController?.pushViewController(viewController, animated: true)
+	}
+	
+	private func goToCollectionViewController() {
+		let collectionViewController = CollectionViewController()
+		self.navigationController?.pushViewController(collectionViewController, animated: true)
 	}
 	
     override func didReceiveMemoryWarning() {

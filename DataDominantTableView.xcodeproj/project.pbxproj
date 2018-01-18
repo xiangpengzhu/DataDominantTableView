@@ -7,18 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		693AD0D52010821900E22E46 /* DDCollectionViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 693AD0D42010821900E22E46 /* DDCollectionViewCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		693AD0D8201082FF00E22E46 /* DDCollectionViewSection.h in Headers */ = {isa = PBXBuildFile; fileRef = 693AD0D6201082FF00E22E46 /* DDCollectionViewSection.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		693AD0D9201082FF00E22E46 /* DDCollectionViewSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 693AD0D7201082FF00E22E46 /* DDCollectionViewSection.m */; };
+		693AD0DB2010832500E22E46 /* DDCollectionViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 693AD0DA2010832500E22E46 /* DDCollectionViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		696A681B1F5FE11800126F42 /* DDTableViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 696A68191F5FE11800126F42 /* DDTableViewAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		696A681C1F5FE11800126F42 /* DDTableViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 696A681A1F5FE11800126F42 /* DDTableViewAdapter.m */; };
 		697C49511F5FDD8400ABED71 /* DDTableViewCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 697C494F1F5FDD8400ABED71 /* DDTableViewCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		699748E81F5FD55400C8589B /* DDTableViewCellModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 699748E61F5FD55400C8589B /* DDTableViewCellModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69B964CD20107FE6000DB632 /* DDCollectionViewAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 69B964CB20107FE6000DB632 /* DDCollectionViewAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69B964CE20107FE6000DB632 /* DDCollectionViewAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 69B964CC20107FE6000DB632 /* DDCollectionViewAdapter.m */; };
 		69E926DF1F5FA1F100DC5370 /* DataDominantTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E926DD1F5FA1F100DC5370 /* DataDominantTableView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		693AD0D42010821900E22E46 /* DDCollectionViewCellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewCellModel.h; sourceTree = "<group>"; };
+		693AD0D6201082FF00E22E46 /* DDCollectionViewSection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewSection.h; sourceTree = "<group>"; };
+		693AD0D7201082FF00E22E46 /* DDCollectionViewSection.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewSection.m; sourceTree = "<group>"; };
+		693AD0DA2010832500E22E46 /* DDCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewCell.h; sourceTree = "<group>"; };
 		696A68191F5FE11800126F42 /* DDTableViewAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewAdapter.h; sourceTree = "<group>"; };
 		696A681A1F5FE11800126F42 /* DDTableViewAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTableViewAdapter.m; sourceTree = "<group>"; };
 		697C494F1F5FDD8400ABED71 /* DDTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewCell.h; sourceTree = "<group>"; };
 		699748E61F5FD55400C8589B /* DDTableViewCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTableViewCellModel.h; sourceTree = "<group>"; };
+		69B964CB20107FE6000DB632 /* DDCollectionViewAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDCollectionViewAdapter.h; sourceTree = "<group>"; };
+		69B964CC20107FE6000DB632 /* DDCollectionViewAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DDCollectionViewAdapter.m; sourceTree = "<group>"; };
 		69E926DA1F5FA1F100DC5370 /* DataDominantTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DataDominantTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69E926DD1F5FA1F100DC5370 /* DataDominantTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDominantTableView.h; sourceTree = "<group>"; };
 		69E926DE1F5FA1F100DC5370 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,6 +72,12 @@
 				697C494F1F5FDD8400ABED71 /* DDTableViewCell.h */,
 				696A68191F5FE11800126F42 /* DDTableViewAdapter.h */,
 				696A681A1F5FE11800126F42 /* DDTableViewAdapter.m */,
+				693AD0D42010821900E22E46 /* DDCollectionViewCellModel.h */,
+				693AD0DA2010832500E22E46 /* DDCollectionViewCell.h */,
+				693AD0D6201082FF00E22E46 /* DDCollectionViewSection.h */,
+				693AD0D7201082FF00E22E46 /* DDCollectionViewSection.m */,
+				69B964CB20107FE6000DB632 /* DDCollectionViewAdapter.h */,
+				69B964CC20107FE6000DB632 /* DDCollectionViewAdapter.m */,
 			);
 			path = DataDominantTableView;
 			sourceTree = "<group>";
@@ -73,6 +91,10 @@
 			files = (
 				699748E81F5FD55400C8589B /* DDTableViewCellModel.h in Headers */,
 				69E926DF1F5FA1F100DC5370 /* DataDominantTableView.h in Headers */,
+				69B964CD20107FE6000DB632 /* DDCollectionViewAdapter.h in Headers */,
+				693AD0DB2010832500E22E46 /* DDCollectionViewCell.h in Headers */,
+				693AD0D52010821900E22E46 /* DDCollectionViewCellModel.h in Headers */,
+				693AD0D8201082FF00E22E46 /* DDCollectionViewSection.h in Headers */,
 				696A681B1F5FE11800126F42 /* DDTableViewAdapter.h in Headers */,
 				697C49511F5FDD8400ABED71 /* DDTableViewCell.h in Headers */,
 			);
@@ -148,7 +170,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69B964CE20107FE6000DB632 /* DDCollectionViewAdapter.m in Sources */,
 				696A681C1F5FE11800126F42 /* DDTableViewAdapter.m in Sources */,
+				693AD0D9201082FF00E22E46 /* DDCollectionViewSection.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

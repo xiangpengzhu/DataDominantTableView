@@ -20,3 +20,8 @@ FOUNDATION_EXPORT const unsigned char DataDominantTableViewVersionString[];
 #import <DataDominantTableView/DDTableViewCell.h>
 #import <DataDominantTableView/DDTableViewAdapter.h>
 
+#import <DataDominantTableView/DDCollectionViewCellModel.h>
+#import <DataDominantTableView/DDCollectionViewCell.h>
+#import <DataDominantTableView/DDCollectionViewSection.h>
+#import <DataDominantTableView/DDCollectionViewAdapter.h>
+

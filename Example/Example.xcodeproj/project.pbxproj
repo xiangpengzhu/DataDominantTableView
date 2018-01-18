@@ -23,6 +23,11 @@
 		697C493A1F5FD9F100ABED71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697C49391F5FD9F100ABED71 /* Assets.xcassets */; };
 		697C493D1F5FD9F100ABED71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697C493B1F5FD9F100ABED71 /* LaunchScreen.storyboard */; };
 		697C494A1F5FDA2400ABED71 /* DataDominantTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697C49491F5FDA1900ABED71 /* DataDominantTableView.framework */; };
+		697E2DC020108DF200AFB020 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E2DBF20108DF200AFB020 /* CollectionViewController.swift */; };
+		697E2DC32010909200AFB020 /* TextCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E2DC12010909200AFB020 /* TextCollectionCell.swift */; };
+		697E2DC42010909200AFB020 /* TextCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2DC22010909200AFB020 /* TextCollectionCell.xib */; };
+		697E2DC72010918D00AFB020 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E2DC52010918D00AFB020 /* ImageCollectionCell.swift */; };
+		697E2DC82010918D00AFB020 /* ImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2DC62010918D00AFB020 /* ImageCollectionCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,11 @@
 		697C493C1F5FD9F100ABED71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		697C493E1F5FD9F100ABED71 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		697C49441F5FDA1900ABED71 /* DataDominantTableView.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DataDominantTableView.xcodeproj; path = ../DataDominantTableView.xcodeproj; sourceTree = "<group>"; };
+		697E2DBF20108DF200AFB020 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		697E2DC12010909200AFB020 /* TextCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextCollectionCell.swift; sourceTree = "<group>"; };
+		697E2DC22010909200AFB020 /* TextCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextCollectionCell.xib; sourceTree = "<group>"; };
+		697E2DC52010918D00AFB020 /* ImageCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCollectionCell.swift; sourceTree = "<group>"; };
+		697E2DC62010918D00AFB020 /* ImageCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageCollectionCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +120,7 @@
 		697C49311F5FD9F100ABED71 /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				697E2DBD20108DBC00AFB020 /* CollectionView */,
 				696A68291F5FEF2F00126F42 /* images */,
 				696A681D1F5FE73800126F42 /* Cells */,
 				697C49321F5FD9F100ABED71 /* AppDelegate.swift */,
@@ -130,6 +141,18 @@
 				697C49491F5FDA1900ABED71 /* DataDominantTableView.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		697E2DBD20108DBC00AFB020 /* CollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				697E2DBF20108DF200AFB020 /* CollectionViewController.swift */,
+				697E2DC12010909200AFB020 /* TextCollectionCell.swift */,
+				697E2DC22010909200AFB020 /* TextCollectionCell.xib */,
+				697E2DC52010918D00AFB020 /* ImageCollectionCell.swift */,
+				697E2DC62010918D00AFB020 /* ImageCollectionCell.xib */,
+			);
+			path = CollectionView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,12 +233,14 @@
 			files = (
 				696A682E1F5FEF2F00126F42 /* 2.jpg in Resources */,
 				697C493D1F5FD9F100ABED71 /* LaunchScreen.storyboard in Resources */,
+				697E2DC42010909200AFB020 /* TextCollectionCell.xib in Resources */,
 				696A68331F5FF18500126F42 /* TextCell.xib in Resources */,
 				697C493A1F5FD9F100ABED71 /* Assets.xcassets in Resources */,
 				696A68281F5FED7400126F42 /* BigImageCell.xib in Resources */,
 				697C49381F5FD9F100ABED71 /* Main.storyboard in Resources */,
 				696A682F1F5FEF2F00126F42 /* 3.jpg in Resources */,
 				696A682D1F5FEF2F00126F42 /* 1.jpg in Resources */,
+				697E2DC82010918D00AFB020 /* ImageCollectionCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +254,10 @@
 				696A68241F5FEBF300126F42 /* DDTableViewAdapterViewController.swift in Sources */,
 				696A68271F5FED7400126F42 /* BigImageCell.swift in Sources */,
 				697C49331F5FD9F100ABED71 /* AppDelegate.swift in Sources */,
+				697E2DC72010918D00AFB020 /* ImageCollectionCell.swift in Sources */,
+				697E2DC32010909200AFB020 /* TextCollectionCell.swift in Sources */,
 				696A68201F5FE86100126F42 /* MenuViewController.swift in Sources */,
+				697E2DC020108DF200AFB020 /* CollectionViewController.swift in Sources */,
 				696A68321F5FF18500126F42 /* TextCell.swift in Sources */,
 				696A68221F5FE91100126F42 /* MenuCell.swift in Sources */,
 				696A68371F5FF45200126F42 /* CustomTableViewAdapterViewController.swift in Sources */,
