@@ -41,21 +41,20 @@ class CollectionViewController: UIViewController {
 	
 	private func buildData() {
 		
-		var section1Array = [TextCollectionCellModel]()
+		let section1 = DDCollectionViewSection(inset: UIEdgeInsetsMake(10, 10, 10, 10), minimumLineSpacing: 2, minimumInteritemSpacing: 10)
 		for i in 0..<20 {
 			let text = TextCollectionCellModel(title: "\(i)")
-			section1Array.append(text)
+			section1.cellModels.append(text)
 		}
-		let section1 = DDCollectionViewSection(inset: UIEdgeInsetsMake(10, 10, 10, 10), minimumLineSpacing: 10, minimumInteritemSpacing: 10, cellModels: section1Array)
 		
-		
-		var section2Array = [ImageCollectionCellModel]()
+
+		let section2 = DDCollectionViewSection(inset: UIEdgeInsetsMake(0, 0, 0, 0), minimumLineSpacing: 30, minimumInteritemSpacing: 30)
 		for _ in 0..<20 {
 			let image = ImageCollectionCellModel()
-			section2Array.append(image)
+			section2.cellModels.append(image)
 		}
-		let section2 = DDCollectionViewSection(inset: UIEdgeInsetsMake(0, 0, 0, 0), minimumLineSpacing: 30, minimumInteritemSpacing: 30, cellModels: section2Array)
-		
+
+
 		adapter.sections = [
 			section1, section2
 		]

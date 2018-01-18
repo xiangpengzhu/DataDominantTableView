@@ -15,11 +15,11 @@
  保存section的layout属性
  */
 @interface DDCollectionViewSection : NSObject
-@property (nonatomic, assign, readonly) UIEdgeInsets inset;
-@property (nonatomic, assign, readonly) CGFloat minimumLineSpacing;
-@property (nonatomic, assign, readonly) CGFloat minimumInteritemSpacing;
-@property (nonatomic, strong, nonnull, readonly) NSArray<id<DDCollectionViewCellModel>> *cellModels;
+@property (nonatomic, assign) UIEdgeInsets inset;
+@property (nonatomic, assign) CGFloat minimumLineSpacing;
+@property (nonatomic, assign) CGFloat minimumInteritemSpacing;
+@property (nonatomic, strong, nonnull) NSArray<id<DDCollectionViewCellModel>> *cellModels;
 
-- (instancetype _Nonnull)initWithInset: (UIEdgeInsets)inset minimumLineSpacing: (CGFloat)minimumLineSpacing minimumInteritemSpacing: (CGFloat)minimumInteritemSpacing cellModels: (NSArray<id<DDCollectionViewCellModel>> *_Nonnull)cellModels;
+- (instancetype _Nonnull)initWithInset: (UIEdgeInsets)inset minimumLineSpacing: (CGFloat)minimumLineSpacing minimumInteritemSpacing: (CGFloat)minimumInteritemSpacing;
 
 @end
