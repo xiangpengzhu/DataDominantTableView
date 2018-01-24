@@ -110,7 +110,11 @@
 	}
 	
 	if ([cellModel respondsToSelector:@selector(cellSizeWithWidth:)]) {
-		return [cellModel cellSizeWithWidth:collectionView.bounds.size.width];
+		CGFloat width = collectionView.bounds.size.width;
+		if (self.collectionViewWidth != nil) {
+			width = (CGFloat)(self.collectionViewWidth.floatValue);
+		}
+		return [cellModel cellSizeWithWidth:width];
 	}
 	
 	return CGSizeZero;
