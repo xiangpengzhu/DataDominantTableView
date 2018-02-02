@@ -117,6 +117,14 @@
 		return [cellModel cellSizeWithWidth:width];
 	}
 	
+	if ([cellModel respondsToSelector:@selector(cellSizeWithHeight:)]) {
+		CGFloat height = collectionView.bounds.size.height;
+		if (self.collectionViewHeight != nil) {
+			height = (CGFloat)(self.collectionViewHeight.floatValue);
+		}
+		return [cellModel cellSizeWithHeight:height];
+	}
+	
 	return CGSizeZero;
 }
 

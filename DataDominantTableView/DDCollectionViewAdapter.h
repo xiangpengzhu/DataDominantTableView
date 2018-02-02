@@ -15,6 +15,7 @@
 
 @property (nonatomic, strong, nonnull) NSArray<DDCollectionViewSection *> *sections;
 @property (nonatomic, assign, nullable) NSNumber *collectionViewWidth;
+@property (nonatomic, assign, nullable) NSNumber *collectionViewHeight;
 
 - (instancetype _Nonnull )initWithCollectionView: (UICollectionView *_Nonnull)collectionView;
 @end
