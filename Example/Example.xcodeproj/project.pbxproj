@@ -22,12 +22,13 @@
 		697C49381F5FD9F100ABED71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697C49361F5FD9F100ABED71 /* Main.storyboard */; };
 		697C493A1F5FD9F100ABED71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 697C49391F5FD9F100ABED71 /* Assets.xcassets */; };
 		697C493D1F5FD9F100ABED71 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 697C493B1F5FD9F100ABED71 /* LaunchScreen.storyboard */; };
-		697C494A1F5FDA2400ABED71 /* DataDominantTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697C49491F5FDA1900ABED71 /* DataDominantTableView.framework */; };
 		697E2DC020108DF200AFB020 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E2DBF20108DF200AFB020 /* CollectionViewController.swift */; };
 		697E2DC32010909200AFB020 /* TextCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E2DC12010909200AFB020 /* TextCollectionCell.swift */; };
 		697E2DC42010909200AFB020 /* TextCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2DC22010909200AFB020 /* TextCollectionCell.xib */; };
 		697E2DC72010918D00AFB020 /* ImageCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 697E2DC52010918D00AFB020 /* ImageCollectionCell.swift */; };
 		697E2DC82010918D00AFB020 /* ImageCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 697E2DC62010918D00AFB020 /* ImageCollectionCell.xib */; };
+		A95A96372239257100290A77 /* DataDominantTableView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 697C49491F5FDA1900ABED71 /* DataDominantTableView.framework */; };
+		A95A96382239257100290A77 /* DataDominantTableView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 697C49491F5FDA1900ABED71 /* DataDominantTableView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,28 @@
 			remoteGlobalIDString = 69E926DA1F5FA1F100DC5370;
 			remoteInfo = DataDominantTableView;
 		};
+		A95A96392239257100290A77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 697C49441F5FDA1900ABED71 /* DataDominantTableView.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 69E926D91F5FA1F100DC5370;
+			remoteInfo = DataDominantTableView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A95A963B2239257100290A77 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A95A96382239257100290A77 /* DataDominantTableView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		696A681F1F5FE86100126F42 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -71,7 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				697C494A1F5FDA2400ABED71 /* DataDominantTableView.framework in Frameworks */,
+				A95A96372239257100290A77 /* DataDominantTableView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,10 +187,12 @@
 				697C492B1F5FD9F100ABED71 /* Sources */,
 				697C492C1F5FD9F100ABED71 /* Frameworks */,
 				697C492D1F5FD9F100ABED71 /* Resources */,
+				A95A963B2239257100290A77 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A95A963A2239257100290A77 /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = Example;
@@ -182,12 +206,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = xpz;
 				TargetAttributes = {
 					697C492E1F5FD9F100ABED71 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = 6U9A79UNKV;
+						DevelopmentTeam = 67B85GMWTD;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -266,6 +290,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		A95A963A2239257100290A77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DataDominantTableView;
+			targetProxy = A95A96392239257100290A77 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		697C49361F5FD9F100ABED71 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -296,15 +328,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -346,15 +386,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -383,7 +431,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6U9A79UNKV;
+				DEVELOPMENT_TEAM = 67B85GMWTD;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xpz.Example;
@@ -396,7 +444,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 6U9A79UNKV;
+				DEVELOPMENT_TEAM = 67B85GMWTD;
 				INFOPLIST_FILE = Example/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xpz.Example;

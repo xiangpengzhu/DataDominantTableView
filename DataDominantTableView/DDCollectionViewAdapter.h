@@ -14,8 +14,8 @@
 @interface DDCollectionViewAdapter : NSObject<UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong, nonnull) NSArray<DDCollectionViewSection *> *sections;
-@property (nonatomic, assign, nullable) NSNumber *collectionViewWidth;
-@property (nonatomic, assign, nullable) NSNumber *collectionViewHeight;
+@property (nonatomic, strong, nullable) NSNumber *collectionViewWidth;
+@property (nonatomic, strong, nullable) NSNumber *collectionViewHeight;
 
 - (instancetype _Nonnull )initWithCollectionView: (UICollectionView *_Nonnull)collectionView;
 @end
