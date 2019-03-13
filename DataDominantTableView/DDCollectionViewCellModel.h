@@ -22,6 +22,6 @@
 - (CGSize)cellSizeWithWidth:(CGFloat)width;
 - (CGSize)cellSizeWithHeight:(CGFloat)height;
 
-@property (nonatomic, copy, nullable) void (^cellDidSelectAction)();
+@property (nonatomic, copy, nullable) void (^cellDidSelectAction)(void);
 
 @end

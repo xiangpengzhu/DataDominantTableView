@@ -57,6 +57,6 @@
 /**
  当点击Cell时，执行的block
  */
-@property (nonatomic, copy, nullable) void (^cellDidSelectAction)();
+@property (nonatomic, copy, nullable) void (^cellDidSelectAction)(void);
 
 @end
